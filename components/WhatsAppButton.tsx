@@ -1,0 +1,52 @@
+type Props = {
+  locale: string;
+};
+
+export default function WhatsAppButton({ locale }: Props) {
+  const whatsappNumber = "15142363018";
+
+  const message =
+    locale === "fa"
+      ? "سلام، برای مشاوره مهاجرت پیام می‌دهم."
+      : locale === "fr"
+      ? "Bonjour, je vous contacte pour une consultation en immigration."
+      : "Hello, I am contacting you for an immigration consultation.";
+
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  const label =
+    locale === "fa"
+      ? "چت در واتس‌اپ"
+      : locale === "fr"
+      ? "WhatsApp"
+      : "WhatsApp";
+
+  return (
+    <div className="fixed bottom-6 right-6 z-[60] group">
+      <div className="absolute bottom-16 right-1/2 translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-3 py-1 text-xs text-white opacity-0 transition group-hover:opacity-100">
+        {label}
+      </div>
+
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={label}
+        title={label}
+        className="relative flex h-14 w-14 items-center justify-center rounded-full bg-green-500 shadow-lg transition duration-300 hover:scale-110 hover:shadow-xl"
+      >
+        <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-40 animate-ping"></span>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          className="relative h-7 w-7 fill-white"
+        >
+          <path d="M16 .396C7.164.396 0 7.56 0 16.396c0 2.89.757 5.61 2.084 7.982L0 32l7.83-2.056A15.94 15.94 0 0 0 16 32c8.837 0 16-7.164 16-16.004C32 7.56 24.837.396 16 .396zm0 29.205c-2.53 0-4.91-.66-6.96-1.81l-.5-.3-4.65 1.22 1.24-4.53-.33-.52A13.55 13.55 0 0 1 2.45 16.4C2.45 8.99 8.59 2.85 16 2.85c7.41 0 13.55 6.14 13.55 13.55 0 7.41-6.14 13.55-13.55 13.55zm7.47-10.12c-.41-.21-2.43-1.2-2.81-1.34-.38-.14-.66-.21-.94.21-.28.41-1.08 1.34-1.33 1.62-.24.28-.49.31-.9.1-.41-.21-1.74-.64-3.32-2.03-1.23-1.1-2.06-2.45-2.3-2.86-.24-.41-.03-.63.18-.84.19-.19.41-.49.62-.73.21-.24.28-.41.42-.69.14-.28.07-.52-.03-.73-.1-.21-.94-2.27-1.29-3.1-.34-.82-.69-.71-.94-.72l-.8-.01c-.28 0-.73.1-1.11.52-.38.41-1.46 1.43-1.46 3.48s1.5 4.04 1.71 4.32c.21.28 2.95 4.5 7.15 6.31.99.43 1.76.69 2.36.88.99.31 1.89.27 2.6.16.79-.12 2.43-.99 2.77-1.94.34-.95.34-1.76.24-1.94-.1-.17-.38-.28-.79-.48z" />
+        </svg>
+      </a>
+    </div>
+  );
+}
