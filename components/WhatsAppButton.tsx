@@ -1,13 +1,13 @@
-type Props = {
+﻿type Props = {
   locale: string;
 };
 
 export default function WhatsAppButton({ locale }: Props) {
-  const whatsappNumber = "15142363018";
+  const whatsappNumber = "16723802464";
 
   const message =
     locale === "fa"
-      ? "سلام، برای مشاوره مهاجرت پیام می‌دهم."
+      ? "Ø³Ù„Ø§Ù…ØŒ Ø¨Ø±Ø§ÛŒ Ù…Ø´Ø§ÙˆØ±Ù‡ Ù…Ù‡Ø§Ø¬Ø±Øª Ù¾ÛŒØ§Ù… Ù…ÛŒâ€ŒØ¯Ù‡Ù…."
       : locale === "fr"
       ? "Bonjour, je vous contacte pour une consultation en immigration."
       : "Hello, I am contacting you for an immigration consultation.";
@@ -18,7 +18,7 @@ export default function WhatsAppButton({ locale }: Props) {
 
   const label =
     locale === "fa"
-      ? "چت در واتس‌اپ"
+      ? "Ú†Øª Ø¯Ø± ÙˆØ§ØªØ³â€ŒØ§Ù¾"
       : locale === "fr"
       ? "WhatsApp"
       : "WhatsApp";

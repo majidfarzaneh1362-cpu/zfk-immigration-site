@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 
@@ -79,95 +79,95 @@ export default function AssessmentClient({ locale }: Props) {
         },
       },
       fa: {
-        sectionTitle: "ارزیابی اولیه خود را تکمیل کنید",
+        sectionTitle: "Ø§Ø±Ø²ÛŒØ§Ø¨ÛŒ Ø§ÙˆÙ„ÛŒÙ‡ Ø®ÙˆØ¯ Ø±Ø§ ØªÚ©Ù…ÛŒÙ„ Ú©Ù†ÛŒØ¯",
         sectionText:
-          "به چند سؤال ساده پاسخ دهید تا یک پیشنهاد اولیه درباره مسیر مناسب مهاجرتی دریافت کنید.",
-        age: "سن",
-        agePlaceholder: "سن خود را وارد کنید",
-        education: "سطح تحصیلات",
-        english: "سطح زبان انگلیسی",
-        goal: "هدف مهاجرتی",
-        referralLabel: "کد معرف یا تخفیف (اختیاری)",
+          "Ø¨Ù‡ Ú†Ù†Ø¯ Ø³Ø¤Ø§Ù„ Ø³Ø§Ø¯Ù‡ Ù¾Ø§Ø³Ø® Ø¯Ù‡ÛŒØ¯ ØªØ§ ÛŒÚ© Ù¾ÛŒØ´Ù†Ù‡Ø§Ø¯ Ø§ÙˆÙ„ÛŒÙ‡ Ø¯Ø±Ø¨Ø§Ø±Ù‡ Ù…Ø³ÛŒØ± Ù…Ù†Ø§Ø³Ø¨ Ù…Ù‡Ø§Ø¬Ø±ØªÛŒ Ø¯Ø±ÛŒØ§ÙØª Ú©Ù†ÛŒØ¯.",
+        age: "Ø³Ù†",
+        agePlaceholder: "Ø³Ù† Ø®ÙˆØ¯ Ø±Ø§ ÙˆØ§Ø±Ø¯ Ú©Ù†ÛŒØ¯",
+        education: "Ø³Ø·Ø­ ØªØ­ØµÛŒÙ„Ø§Øª",
+        english: "Ø³Ø·Ø­ Ø²Ø¨Ø§Ù† Ø§Ù†Ú¯Ù„ÛŒØ³ÛŒ",
+        goal: "Ù‡Ø¯Ù Ù…Ù‡Ø§Ø¬Ø±ØªÛŒ",
+        referralLabel: "Ú©Ø¯ Ù…Ø¹Ø±Ù ÛŒØ§ ØªØ®ÙÛŒÙ (Ø§Ø®ØªÛŒØ§Ø±ÛŒ)",
         referralHelper:
-          "در صورت داشتن کد تخفیف یا معرفی از طرف شخصی، در این قسمت وارد کنید.",
-        referralPlaceholder: "کد معرف یا تخفیف را وارد کنید",
-        analyze: "تحلیل پروفایل",
-        resultTitle: "پیشنهاد اولیه",
-        whatsapp: "ارسال نتیجه به واتس‌اپ",
+          "Ø¯Ø± ØµÙˆØ±Øª Ø¯Ø§Ø´ØªÙ† Ú©Ø¯ ØªØ®ÙÛŒÙ ÛŒØ§ Ù…Ø¹Ø±ÙÛŒ Ø§Ø² Ø·Ø±Ù Ø´Ø®ØµÛŒØŒ Ø¯Ø± Ø§ÛŒÙ† Ù‚Ø³Ù…Øª ÙˆØ§Ø±Ø¯ Ú©Ù†ÛŒØ¯.",
+        referralPlaceholder: "Ú©Ø¯ Ù…Ø¹Ø±Ù ÛŒØ§ ØªØ®ÙÛŒÙ Ø±Ø§ ÙˆØ§Ø±Ø¯ Ú©Ù†ÛŒØ¯",
+        analyze: "ØªØ­Ù„ÛŒÙ„ Ù¾Ø±ÙˆÙØ§ÛŒÙ„",
+        resultTitle: "Ù¾ÛŒØ´Ù†Ù‡Ø§Ø¯ Ø§ÙˆÙ„ÛŒÙ‡",
+        whatsapp: "Ø§Ø±Ø³Ø§Ù„ Ù†ØªÛŒØ¬Ù‡ Ø¨Ù‡ ÙˆØ§ØªØ³â€ŒØ§Ù¾",
         disclaimer:
-          "این ابزار فقط برای راهنمایی اولیه است و جایگزین مشاوره حرفه‌ای مهاجرت نیست.",
+          "Ø§ÛŒÙ† Ø§Ø¨Ø²Ø§Ø± ÙÙ‚Ø· Ø¨Ø±Ø§ÛŒ Ø±Ø§Ù‡Ù†Ù…Ø§ÛŒÛŒ Ø§ÙˆÙ„ÛŒÙ‡ Ø§Ø³Øª Ùˆ Ø¬Ø§ÛŒÚ¯Ø²ÛŒÙ† Ù…Ø´Ø§ÙˆØ±Ù‡ Ø­Ø±ÙÙ‡â€ŒØ§ÛŒ Ù…Ù‡Ø§Ø¬Ø±Øª Ù†ÛŒØ³Øª.",
         educationOptions: {
-          diploma: "دیپلم",
-          bachelor: "کارشناسی",
-          master: "کارشناسی ارشد",
-          phd: "دکتری",
+          diploma: "Ø¯ÛŒÙ¾Ù„Ù…",
+          bachelor: "Ú©Ø§Ø±Ø´Ù†Ø§Ø³ÛŒ",
+          master: "Ú©Ø§Ø±Ø´Ù†Ø§Ø³ÛŒ Ø§Ø±Ø´Ø¯",
+          phd: "Ø¯Ú©ØªØ±ÛŒ",
         },
         englishOptions: {
-          low: "پایه",
-          medium: "متوسط",
-          high: "پیشرفته",
+          low: "Ù¾Ø§ÛŒÙ‡",
+          medium: "Ù…ØªÙˆØ³Ø·",
+          high: "Ù¾ÛŒØ´Ø±ÙØªÙ‡",
         },
         goalOptions: {
-          study: "مهاجرت تحصیلی",
-          work: "مهاجرت کاری",
-          pr: "اقامت دائم",
+          study: "Ù…Ù‡Ø§Ø¬Ø±Øª ØªØ­ØµÛŒÙ„ÛŒ",
+          work: "Ù…Ù‡Ø§Ø¬Ø±Øª Ú©Ø§Ø±ÛŒ",
+          pr: "Ø§Ù‚Ø§Ù…Øª Ø¯Ø§Ø¦Ù…",
         },
         outputs: {
-          studyTitle: "مسیر پیشنهادی: استادی پرمیت",
+          studyTitle: "Ù…Ø³ÛŒØ± Ù¾ÛŒØ´Ù†Ù‡Ø§Ø¯ÛŒ: Ø§Ø³ØªØ§Ø¯ÛŒ Ù¾Ø±Ù…ÛŒØª",
           studyText:
-            "با توجه به هدف فعلی شما، مسیر تحصیلی می‌تواند نقطه شروع مناسب‌تری برای بررسی باشد.",
-          workTitle: "مسیر پیشنهادی: ورک پرمیت",
+            "Ø¨Ø§ ØªÙˆØ¬Ù‡ Ø¨Ù‡ Ù‡Ø¯Ù ÙØ¹Ù„ÛŒ Ø´Ù…Ø§ØŒ Ù…Ø³ÛŒØ± ØªØ­ØµÛŒÙ„ÛŒ Ù…ÛŒâ€ŒØªÙˆØ§Ù†Ø¯ Ù†Ù‚Ø·Ù‡ Ø´Ø±ÙˆØ¹ Ù…Ù†Ø§Ø³Ø¨â€ŒØªØ±ÛŒ Ø¨Ø±Ø§ÛŒ Ø¨Ø±Ø±Ø³ÛŒ Ø¨Ø§Ø´Ø¯.",
+          workTitle: "Ù…Ø³ÛŒØ± Ù¾ÛŒØ´Ù†Ù‡Ø§Ø¯ÛŒ: ÙˆØ±Ú© Ù¾Ø±Ù…ÛŒØª",
           workText:
-            "با توجه به هدف فعلی شما، بررسی مسیرهای کاری می‌تواند گزینه مناسب‌تری باشد.",
-          prTitle: "مسیر پیشنهادی: اقامت دائم",
+            "Ø¨Ø§ ØªÙˆØ¬Ù‡ Ø¨Ù‡ Ù‡Ø¯Ù ÙØ¹Ù„ÛŒ Ø´Ù…Ø§ØŒ Ø¨Ø±Ø±Ø³ÛŒ Ù…Ø³ÛŒØ±Ù‡Ø§ÛŒ Ú©Ø§Ø±ÛŒ Ù…ÛŒâ€ŒØªÙˆØ§Ù†Ø¯ Ú¯Ø²ÛŒÙ†Ù‡ Ù…Ù†Ø§Ø³Ø¨â€ŒØªØ±ÛŒ Ø¨Ø§Ø´Ø¯.",
+          prTitle: "Ù…Ø³ÛŒØ± Ù¾ÛŒØ´Ù†Ù‡Ø§Ø¯ÛŒ: Ø§Ù‚Ø§Ù…Øª Ø¯Ø§Ø¦Ù…",
           prText:
-            "با توجه به هدف فعلی شما، مسیرهای اقامت دائم ارزش بررسی دقیق‌تر را دارند.",
+            "Ø¨Ø§ ØªÙˆØ¬Ù‡ Ø¨Ù‡ Ù‡Ø¯Ù ÙØ¹Ù„ÛŒ Ø´Ù…Ø§ØŒ Ù…Ø³ÛŒØ±Ù‡Ø§ÛŒ Ø§Ù‚Ø§Ù…Øª Ø¯Ø§Ø¦Ù… Ø§Ø±Ø²Ø´ Ø¨Ø±Ø±Ø³ÛŒ Ø¯Ù‚ÛŒÙ‚â€ŒØªØ± Ø±Ø§ Ø¯Ø§Ø±Ù†Ø¯.",
         },
       },
       fr: {
-        sectionTitle: "Complétez votre évaluation initiale",
+        sectionTitle: "ComplÃ©tez votre Ã©valuation initiale",
         sectionText:
-          "Répondez à quelques questions simples pour obtenir une première suggestion de parcours d’immigration.",
-        age: "Âge",
-        agePlaceholder: "Entrez votre âge",
-        education: "Niveau d’études",
-        english: "Niveau d’anglais",
-        goal: "Objectif d’immigration",
-        referralLabel: "Code de référence ou réduction (facultatif)",
+          "RÃ©pondez Ã  quelques questions simples pour obtenir une premiÃ¨re suggestion de parcours dâ€™immigration.",
+        age: "Ã‚ge",
+        agePlaceholder: "Entrez votre Ã¢ge",
+        education: "Niveau dâ€™Ã©tudes",
+        english: "Niveau dâ€™anglais",
+        goal: "Objectif dâ€™immigration",
+        referralLabel: "Code de rÃ©fÃ©rence ou rÃ©duction (facultatif)",
         referralHelper:
-          "Si vous avez un code de recommandation ou de réduction, saisissez-le ici.",
-        referralPlaceholder: "Saisissez votre code de référence ou de réduction",
+          "Si vous avez un code de recommandation ou de rÃ©duction, saisissez-le ici.",
+        referralPlaceholder: "Saisissez votre code de rÃ©fÃ©rence ou de rÃ©duction",
         analyze: "Analyser mon profil",
         resultTitle: "Recommandation initiale",
-        whatsapp: "Envoyer le résultat sur WhatsApp",
+        whatsapp: "Envoyer le rÃ©sultat sur WhatsApp",
         disclaimer:
           "Cet outil fournit uniquement une orientation initiale et ne remplace pas une consultation professionnelle en immigration.",
         educationOptions: {
-          diploma: "Diplôme",
-          bachelor: "Baccalauréat",
-          master: "Maîtrise",
+          diploma: "DiplÃ´me",
+          bachelor: "BaccalaurÃ©at",
+          master: "MaÃ®trise",
           phd: "Doctorat",
         },
         englishOptions: {
-          low: "Débutant",
-          medium: "Intermédiaire",
-          high: "Avancé",
+          low: "DÃ©butant",
+          medium: "IntermÃ©diaire",
+          high: "AvancÃ©",
         },
         goalOptions: {
-          study: "Permis d’études",
+          study: "Permis dâ€™Ã©tudes",
           work: "Permis de travail",
-          pr: "Résidence permanente",
+          pr: "RÃ©sidence permanente",
         },
         outputs: {
-          studyTitle: "Parcours recommandé : Permis d’études",
+          studyTitle: "Parcours recommandÃ© : Permis dâ€™Ã©tudes",
           studyText:
-            "Selon votre objectif actuel, une voie académique pourrait constituer le meilleur point de départ.",
-          workTitle: "Parcours recommandé : Permis de travail",
+            "Selon votre objectif actuel, une voie acadÃ©mique pourrait constituer le meilleur point de dÃ©part.",
+          workTitle: "Parcours recommandÃ© : Permis de travail",
           workText:
-            "Selon votre objectif actuel, une stratégie orientée permis de travail pourrait être plus appropriée.",
-          prTitle: "Parcours recommandé : Résidence permanente",
+            "Selon votre objectif actuel, une stratÃ©gie orientÃ©e permis de travail pourrait Ãªtre plus appropriÃ©e.",
+          prTitle: "Parcours recommandÃ© : RÃ©sidence permanente",
           prText:
-            "Selon votre objectif actuel, les voies de résidence permanente méritent une évaluation plus approfondie.",
+            "Selon votre objectif actuel, les voies de rÃ©sidence permanente mÃ©ritent une Ã©valuation plus approfondie.",
         },
       },
     }[locale as "en" | "fa" | "fr"] || {
@@ -252,10 +252,10 @@ export default function AssessmentClient({ locale }: Props) {
     });
   }
 
-  const whatsappNumber = "15141234567"; // شماره واقعی را جایگزین کن
+  const whatsappNumber = "16723802464"; // Ø´Ù…Ø§Ø±Ù‡ ÙˆØ§Ù‚Ø¹ÛŒ Ø±Ø§ Ø¬Ø§ÛŒÚ¯Ø²ÛŒÙ† Ú©Ù†
 
   const whatsappMessage = `
-${locale === "fa" ? "ارزیابی اولیه مهاجرت" : locale === "fr" ? "Évaluation initiale" : "Initial Immigration Assessment"}
+${locale === "fa" ? "Ø§Ø±Ø²ÛŒØ§Ø¨ÛŒ Ø§ÙˆÙ„ÛŒÙ‡ Ù…Ù‡Ø§Ø¬Ø±Øª" : locale === "fr" ? "Ã‰valuation initiale" : "Initial Immigration Assessment"}
 
 ${t.age}: ${form.age}
 ${t.education}: ${form.education}

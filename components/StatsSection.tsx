@@ -43,7 +43,7 @@ export default function StatsSection({ locale }: Props) {
           : "Years of Experience",
     },
     {
-      value: 500,
+      value: 2000,
       suffix: "+",
       label:
         locale === "fa"

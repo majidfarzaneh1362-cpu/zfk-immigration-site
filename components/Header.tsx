@@ -40,9 +40,10 @@ export default function Header({ locale }: HeaderProps) {
             <Image
               src="/images/brand/logo-zfk.png"
               alt="ZFK Immigration"
-              width={64}
-              height={64}
+              width={220}
+              height={220}
               className="h-14 w-auto object-contain"
+              unoptimized
               priority
             />
           </div>

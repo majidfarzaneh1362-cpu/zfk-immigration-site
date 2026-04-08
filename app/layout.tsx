@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     "Licensed Canadian Immigration Consultancy based in Montreal, Quebec.",
   icons: {
     icon: [
-      { url: "/images/favicon.png", type: "image/png", sizes: "64x64" },
+      { url: "/images/brand/logo-zfk.png", type: "image/png", sizes: "512x512" },
       { url: "/favicon.ico" },
     ],
-    shortcut: "/images/favicon.png",
-    apple: "/images/favicon.png",
+    shortcut: "/images/brand/logo-zfk.png",
+    apple: "/images/brand/logo-zfk.png",
   },
 };
 

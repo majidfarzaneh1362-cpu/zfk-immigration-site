@@ -1,11 +1,12 @@
+﻿import CustomerSatisfactionVideos from "./CustomerSatisfactionVideos";
+
 type Props = {
   locale: string;
 };
 
 const INSTAGRAM_URL = "https://www.instagram.com/zfk.immigration/";
 const GOOGLE_REVIEWS_URL =
-  "https://www.google.com/maps/search/?api=1&query=ZFK+Immigration+Montreal";
-const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/";
+  "https://www.google.com/maps/place/ZFK+Immigration/@45.5044461,-73.5576923,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91be67f9707cb:0x2c8cc7cb52a50b7e!8m2!3d45.5044461!4d-73.5576923!16s%2Fg%2F11ldszg4h0!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D";
 
 type LocalizedText = {
   title: string;
@@ -61,26 +62,26 @@ export default function SocialProofSection({ locale }: Props) {
         "Manual featured-video mode is active. Replace links with official channel/video URLs when ready.",
     },
     fa: {
-      title: "شبکه های اجتماعی ما",
-      instagramTitle: "اینستاگرام",
+      title: "Ø´Ø¨Ú©Ù‡ Ù‡Ø§ÛŒ Ø§Ø¬ØªÙ…Ø§Ø¹ÛŒ Ù…Ø§",
+      instagramTitle: "Ø§ÛŒÙ†Ø³ØªØ§Ú¯Ø±Ø§Ù…",
       instagramText:
-        "برای دریافت به روزرسانی ها، نکات پرونده و محتوای آموزشی مهاجرت، صفحه رسمی ما را دنبال کنید.",
-      instagramCta: "دنبال کردن @zfk.immigration",
+        "Ø¨Ø±Ø§ÛŒ Ø¯Ø±ÛŒØ§ÙØª Ø¨Ù‡ Ø±ÙˆØ²Ø±Ø³Ø§Ù†ÛŒ Ù‡Ø§ØŒ Ù†Ú©Ø§Øª Ù¾Ø±ÙˆÙ†Ø¯Ù‡ Ùˆ Ù…Ø­ØªÙˆØ§ÛŒ Ø¢Ù…ÙˆØ²Ø´ÛŒ Ù…Ù‡Ø§Ø¬Ø±ØªØŒ ØµÙØ­Ù‡ Ø±Ø³Ù…ÛŒ Ù…Ø§ Ø±Ø§ Ø¯Ù†Ø¨Ø§Ù„ Ú©Ù†ÛŒØ¯.",
+      instagramCta: "Ø¯Ù†Ø¨Ø§Ù„ Ú©Ø±Ø¯Ù† @zfk.immigration",
       instagramFallback:
-        "فید در حالت جایگزین منتخب نمایش داده می شود تا سرعت و پایداری حفظ شود.",
-      googleTitle: "نظرات گوگل",
+        "ÙÛŒØ¯ Ø¯Ø± Ø­Ø§Ù„Øª Ø¬Ø§ÛŒÚ¯Ø²ÛŒÙ† Ù…Ù†ØªØ®Ø¨ Ù†Ù…Ø§ÛŒØ´ Ø¯Ø§Ø¯Ù‡ Ù…ÛŒ Ø´ÙˆØ¯ ØªØ§ Ø³Ø±Ø¹Øª Ùˆ Ù¾Ø§ÛŒØ¯Ø§Ø±ÛŒ Ø­ÙØ¸ Ø´ÙˆØ¯.",
+      googleTitle: "Ù†Ø¸Ø±Ø§Øª Ú¯ÙˆÚ¯Ù„",
       googleText:
-        "این بخش با کارت های منتخب جایگزین نمایش داده می شود. برای مشاهده جدیدترین نظرها از دکمه زیر استفاده کنید.",
-      googleCta: "مشاهده نظرات گوگل",
+        "Ø§ÛŒÙ† Ø¨Ø®Ø´ Ø¨Ø§ Ú©Ø§Ø±Øª Ù‡Ø§ÛŒ Ù…Ù†ØªØ®Ø¨ Ø¬Ø§ÛŒÚ¯Ø²ÛŒÙ† Ù†Ù…Ø§ÛŒØ´ Ø¯Ø§Ø¯Ù‡ Ù…ÛŒ Ø´ÙˆØ¯. Ø¨Ø±Ø§ÛŒ Ù…Ø´Ø§Ù‡Ø¯Ù‡ Ø¬Ø¯ÛŒØ¯ØªØ±ÛŒÙ† Ù†Ø¸Ø±Ù‡Ø§ Ø§Ø² Ø¯Ú©Ù…Ù‡ Ø²ÛŒØ± Ø§Ø³ØªÙØ§Ø¯Ù‡ Ú©Ù†ÛŒØ¯.",
+      googleCta: "Ù…Ø´Ø§Ù‡Ø¯Ù‡ Ù†Ø¸Ø±Ø§Øª Ú¯ÙˆÚ¯Ù„",
       googleFallback:
-        "API رسمی نظرات گوگل هنوز پیکربندی نشده است. نمایش در حالت منتخب انجام می شود.",
-      ratingSummary: "خلاصه امتیاز (نمونه): 4.9 از 5",
-      youtubeTitle: "یوتیوب",
+        "API Ø±Ø³Ù…ÛŒ Ù†Ø¸Ø±Ø§Øª Ú¯ÙˆÚ¯Ù„ Ù‡Ù†ÙˆØ² Ù¾ÛŒÚ©Ø±Ø¨Ù†Ø¯ÛŒ Ù†Ø´Ø¯Ù‡ Ø§Ø³Øª. Ù†Ù…Ø§ÛŒØ´ Ø¯Ø± Ø­Ø§Ù„Øª Ù…Ù†ØªØ®Ø¨ Ø§Ù†Ø¬Ø§Ù… Ù…ÛŒ Ø´ÙˆØ¯.",
+      ratingSummary: "Ø®Ù„Ø§ØµÙ‡ Ø§Ù…ØªÛŒØ§Ø² (Ù†Ù…ÙˆÙ†Ù‡): 4.9 Ø§Ø² 5",
+      youtubeTitle: "ÛŒÙˆØªÛŒÙˆØ¨",
       youtubeText:
-        "ویدیوهای منتخب در حالت دستی نمایش داده می شوند تا شناسه های رسمی کانال و ویدیو نهایی شوند.",
-      youtubeCta: "مشاهده یوتیوب",
+        "ÙˆÛŒØ¯ÛŒÙˆÙ‡Ø§ÛŒ Ù…Ù†ØªØ®Ø¨ Ø¯Ø± Ø­Ø§Ù„Øª Ø¯Ø³ØªÛŒ Ù†Ù…Ø§ÛŒØ´ Ø¯Ø§Ø¯Ù‡ Ù…ÛŒ Ø´ÙˆÙ†Ø¯ ØªØ§ Ø´Ù†Ø§Ø³Ù‡ Ù‡Ø§ÛŒ Ø±Ø³Ù…ÛŒ Ú©Ø§Ù†Ø§Ù„ Ùˆ ÙˆÛŒØ¯ÛŒÙˆ Ù†Ù‡Ø§ÛŒÛŒ Ø´ÙˆÙ†Ø¯.",
+      youtubeCta: "Ù…Ø´Ø§Ù‡Ø¯Ù‡ ÛŒÙˆØªÛŒÙˆØ¨",
       youtubeFallback:
-        "حالت ویدیوی دستی فعال است. پس از نهایی شدن، لینک رسمی کانال و ویدیوها جایگزین شوند.",
+        "Ø­Ø§Ù„Øª ÙˆÛŒØ¯ÛŒÙˆÛŒ Ø¯Ø³ØªÛŒ ÙØ¹Ø§Ù„ Ø§Ø³Øª. Ù¾Ø³ Ø§Ø² Ù†Ù‡Ø§ÛŒÛŒ Ø´Ø¯Ù†ØŒ Ù„ÛŒÙ†Ú© Ø±Ø³Ù…ÛŒ Ú©Ø§Ù†Ø§Ù„ Ùˆ ÙˆÛŒØ¯ÛŒÙˆÙ‡Ø§ Ø¬Ø§ÛŒÚ¯Ø²ÛŒÙ† Ø´ÙˆÙ†Ø¯.",
     },
     fr: {
       title: "Retrouvez-nous en ligne",
@@ -110,13 +111,13 @@ export default function SocialProofSection({ locale }: Props) {
     {
       title:
         locale === "fa"
-          ? "نکات مهاجرت"
+          ? "Ù†Ú©Ø§Øª Ù…Ù‡Ø§Ø¬Ø±Øª"
           : locale === "fr"
           ? "Conseils immigration"
           : "Immigration Tips",
       text:
         locale === "fa"
-          ? "راهنمای کوتاه برای تصمیم گیری بهتر در مسیر مهاجرت."
+          ? "Ø±Ø§Ù‡Ù†Ù…Ø§ÛŒ Ú©ÙˆØªØ§Ù‡ Ø¨Ø±Ø§ÛŒ ØªØµÙ…ÛŒÙ… Ú¯ÛŒØ±ÛŒ Ø¨Ù‡ØªØ± Ø¯Ø± Ù…Ø³ÛŒØ± Ù…Ù‡Ø§Ø¬Ø±Øª."
           : locale === "fr"
           ? "Conseils courts pour mieux orienter votre parcours."
           : "Short guidance to make better immigration decisions.",
@@ -124,13 +125,13 @@ export default function SocialProofSection({ locale }: Props) {
     {
       title:
         locale === "fa"
-          ? "به روزرسانی برنامه ها"
+          ? "Ø¨Ù‡ Ø±ÙˆØ²Ø±Ø³Ø§Ù†ÛŒ Ø¨Ø±Ù†Ø§Ù…Ù‡ Ù‡Ø§"
           : locale === "fr"
           ? "Mises a jour des programmes"
           : "Program Updates",
       text:
         locale === "fa"
-          ? "تغییرات مهم برنامه های مهاجرتی به زبان ساده."
+          ? "ØªØºÛŒÛŒØ±Ø§Øª Ù…Ù‡Ù… Ø¨Ø±Ù†Ø§Ù…Ù‡ Ù‡Ø§ÛŒ Ù…Ù‡Ø§Ø¬Ø±ØªÛŒ Ø¨Ù‡ Ø²Ø¨Ø§Ù† Ø³Ø§Ø¯Ù‡."
           : locale === "fr"
           ? "Changements importants presentes de facon claire."
           : "Important pathway updates in plain language.",
@@ -138,13 +139,13 @@ export default function SocialProofSection({ locale }: Props) {
     {
       title:
         locale === "fa"
-          ? "آموزش مدارک"
+          ? "Ø¢Ù…ÙˆØ²Ø´ Ù…Ø¯Ø§Ø±Ú©"
           : locale === "fr"
           ? "Preparation des documents"
           : "Document Prep",
       text:
         locale === "fa"
-          ? "نکات عملی برای آماده سازی مدارک پرونده."
+          ? "Ù†Ú©Ø§Øª Ø¹Ù…Ù„ÛŒ Ø¨Ø±Ø§ÛŒ Ø¢Ù…Ø§Ø¯Ù‡ Ø³Ø§Ø²ÛŒ Ù…Ø¯Ø§Ø±Ú© Ù¾Ø±ÙˆÙ†Ø¯Ù‡."
           : locale === "fr"
           ? "Bonnes pratiques pour preparer un dossier solide."
           : "Practical tips for preparing a stronger file.",
@@ -153,20 +154,20 @@ export default function SocialProofSection({ locale }: Props) {
 
   const googleReviews: ReviewCard[] = [
     {
-      name: locale === "fa" ? "مراجع" : locale === "fr" ? "Client" : "Client",
+      name: locale === "fa" ? "Ù…Ø±Ø§Ø¬Ø¹" : locale === "fr" ? "Client" : "Client",
       text:
         locale === "fa"
-          ? "توضیحات بسیار شفاف بود و مسیر مناسب پرونده من مشخص شد."
+          ? "ØªÙˆØ¶ÛŒØ­Ø§Øª Ø¨Ø³ÛŒØ§Ø± Ø´ÙØ§Ù Ø¨ÙˆØ¯ Ùˆ Ù…Ø³ÛŒØ± Ù…Ù†Ø§Ø³Ø¨ Ù¾Ø±ÙˆÙ†Ø¯Ù‡ Ù…Ù† Ù…Ø´Ø®Øµ Ø´Ø¯."
           : locale === "fr"
           ? "Accompagnement clair et professionnel, avec une strategie adaptee."
           : "Clear and professional guidance with a realistic strategy.",
     },
     {
       name:
-        locale === "fa" ? "متقاضی" : locale === "fr" ? "Candidat" : "Applicant",
+        locale === "fa" ? "Ù…ØªÙ‚Ø§Ø¶ÛŒ" : locale === "fr" ? "Candidat" : "Applicant",
       text:
         locale === "fa"
-          ? "پاسخ گویی دقیق و منظم بود و همه مراحل برای من قابل درک شد."
+          ? "Ù¾Ø§Ø³Ø® Ú¯ÙˆÛŒÛŒ Ø¯Ù‚ÛŒÙ‚ Ùˆ Ù…Ù†Ø¸Ù… Ø¨ÙˆØ¯ Ùˆ Ù‡Ù…Ù‡ Ù…Ø±Ø§Ø­Ù„ Ø¨Ø±Ø§ÛŒ Ù…Ù† Ù‚Ø§Ø¨Ù„ Ø¯Ø±Ú© Ø´Ø¯."
           : locale === "fr"
           ? "Reponses precises, suivi regulier et excellente clarte du processus."
           : "Precise answers, consistent follow-up, and excellent process clarity.",
@@ -174,47 +175,16 @@ export default function SocialProofSection({ locale }: Props) {
     {
       name:
         locale === "fa"
-          ? "خانواده"
+          ? "Ø®Ø§Ù†ÙˆØ§Ø¯Ù‡"
           : locale === "fr"
           ? "Famille"
           : "Family Client",
       text:
         locale === "fa"
-          ? "رویکرد حرفه ای و مسئولانه باعث شد با اطمینان تصمیم بگیریم."
+          ? "Ø±ÙˆÛŒÚ©Ø±Ø¯ Ø­Ø±ÙÙ‡ Ø§ÛŒ Ùˆ Ù…Ø³Ø¦ÙˆÙ„Ø§Ù†Ù‡ Ø¨Ø§Ø¹Ø« Ø´Ø¯ Ø¨Ø§ Ø§Ø·Ù…ÛŒÙ†Ø§Ù† ØªØµÙ…ÛŒÙ… Ø¨Ú¯ÛŒØ±ÛŒÙ…."
           : locale === "fr"
           ? "Approche responsable qui nous a permis de decider en confiance."
           : "Responsible advice that helped us make confident decisions.",
-    },
-  ];
-
-  const youtubeCards: ManualCard[] = [
-    {
-      title:
-        locale === "fa"
-          ? "ویدیوی معرفی خدمات"
-          : locale === "fr"
-          ? "Video de presentation"
-          : "Service Overview Video",
-      text:
-        locale === "fa"
-          ? "نسخه دستی: لینک ویدیوی رسمی پس از تایید اضافه می شود."
-          : locale === "fr"
-          ? "Mode manuel: le lien video officiel sera ajoute apres validation."
-          : "Manual mode: official video link can be added when finalized.",
-    },
-    {
-      title:
-        locale === "fa"
-          ? "سوالات پرتکرار"
-          : locale === "fr"
-          ? "Questions frequentes"
-          : "Frequently Asked Questions",
-      text:
-        locale === "fa"
-          ? "پاسخ به سوالات متداول در قالب ویدیوهای کوتاه."
-          : locale === "fr"
-          ? "Reponses aux questions frequentes en format video court."
-          : "Short-form answers to common immigration questions.",
     },
   ];
 
@@ -270,7 +240,7 @@ export default function SocialProofSection({ locale }: Props) {
             <div className="mt-6 grid gap-4 md:grid-cols-3">
               {googleReviews.map((review, index) => (
                 <div key={`${review.name}-${index}`} className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
-                  <p className="text-sm text-amber-500">★★★★★</p>
+                  <p className="text-sm text-amber-500">â˜…â˜…â˜…â˜…â˜…</p>
                   <p className="mt-2 text-sm text-slate-600">{review.text}</p>
                   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
                     {review.name}
@@ -280,33 +250,10 @@ export default function SocialProofSection({ locale }: Props) {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:p-8">
-            <div className={isRTL ? "text-right" : "text-left"}>
-              <h3 className="text-2xl font-semibold text-slate-900">{t.youtubeTitle}</h3>
-              <p className="mt-3 text-slate-600">{t.youtubeText}</p>
-              <p className="mt-2 text-sm text-slate-500">{t.youtubeFallback}</p>
-              <a
-                href={YOUTUBE_CHANNEL_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-block rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-              >
-                {t.youtubeCta}
-              </a>
-            </div>
-
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {youtubeCards.map((video) => (
-                <div key={video.title} className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
-                  <div className="aspect-video rounded-lg bg-slate-100" />
-                  <h4 className="mt-3 font-semibold text-slate-900">{video.title}</h4>
-                  <p className="mt-2 text-sm text-slate-600">{video.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <CustomerSatisfactionVideos locale={locale} />
         </div>
       </div>
     </section>
   );
 }
+

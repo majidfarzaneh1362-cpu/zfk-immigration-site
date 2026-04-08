@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import HeroSlider from "../../components/HeroSlider";
 import StatsSection from "../../components/StatsSection";
 import SocialProofSection from "../../components/SocialProofSection";
+import OfficeMapSection from "../../components/OfficeMapSection";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -386,6 +387,7 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       <SocialProofSection locale={locale} />
+      <OfficeMapSection locale={locale} />
 
       <Footer locale={locale} />
     </main>
