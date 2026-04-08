@@ -1,4 +1,6 @@
 import WhatsAppButton from "../../components/WhatsAppButton";
+import { notFound } from "next/navigation";
+import { locales } from "../../i18n";
 
 type Props = {
   children: React.ReactNode;
@@ -7,6 +9,11 @@ type Props = {
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
+
+  if (!locales.includes(locale)) {
+    notFound();
+  }
+
   const isRTL = locale === "fa";
 
   return (

@@ -1,10 +1,38 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { getSiteUrl } from "../lib/seo";
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: "ZFK Immigration",
   description:
     "Licensed Canadian Immigration Consultancy based in Montreal, Quebec.",
+  metadataBase: new URL(siteUrl),
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title: "ZFK Immigration",
+    description:
+      "Licensed Canadian Immigration Consultancy based in Montreal, Quebec.",
+    siteName: "ZFK Immigration",
+    images: [
+      {
+        url: "/images/brand/logo-zfk.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ZFK Immigration",
+    description:
+      "Licensed Canadian Immigration Consultancy based in Montreal, Quebec.",
+    images: ["/images/brand/logo-zfk.png"],
+  },
   icons: {
     icon: [
       { url: "/images/brand/logo-zfk.png", type: "image/png", sizes: "512x512" },
