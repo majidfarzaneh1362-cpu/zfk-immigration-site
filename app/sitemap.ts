@@ -1,9 +1,8 @@
 import type { MetadataRoute } from "next";
 import { provinces } from "../data/provinces";
-import { getSiteUrl } from "../lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = getSiteUrl();
+  const baseUrl = "https://zfkimigration.ca";
   const locales = ["en", "fa", "fr"];
   const staticRoutes = [
     "",
@@ -17,6 +16,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const now = new Date();
+
+  const rootUrl = {
+    url: baseUrl,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 1,
+  };
 
   const localizedStatic = locales.flatMap((locale) =>
     staticRoutes.map((route) => ({
@@ -36,5 +42,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...localizedStatic, ...localizedProvincePages];
+  return [rootUrl, ...localizedStatic, ...localizedProvincePages];
 }
